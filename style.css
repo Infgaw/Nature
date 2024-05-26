@@ -71,6 +71,7 @@ nav{
   transition: .8s ease-in-out;
   border: var(--white) 2px;
   top: 0;
+  overflow-x: hidden;
 }
 
 .btn::before{
@@ -367,9 +368,9 @@ footer .footer-links a:hover{
     background: var(--primary);
     position: absolute;
     top: 0;
-    right: -900px;
+    z-index: -100;
     width: 80%;
-    height: 100vh;
+    height: 50vh;
     padding-top: 80px;
     transition: .8s ease-in-out;
   }
@@ -384,7 +385,7 @@ footer .footer-links a:hover{
   }
 
   .nav-list.active{
-    right: 0;
+    z-index: 1;
   }
 
 
